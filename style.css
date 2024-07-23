@@ -1,0 +1,37 @@
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+}
+
+header {
+    background: #007bff;
+    color: white;
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+
+section {
+    padding: 60px 0;
+}
+
+footer {
+    background: #343a40;
+    color: white;
+    padding: 20px 0;
+}
+
+.navbar-brand {
+    font-weight: bold;
+}
+
+.nav-link {
+    margin-right: 15px;
+}
+
+.nav-link:hover {
+    color: #007bff !important;
+}
+
+h2 {
+    margin-bottom: 30px;
+}
