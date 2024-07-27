@@ -3,96 +3,80 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio | AnnaPoorani M</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css">
+    <title>Animated Portfolio</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
 </head>
-<body>
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
-        <div class="container">
-            <a class="navbar-brand" href="#">AnnaPoorani MeenatchiSundaram</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav ms-auto">
-                    <li class="nav-item">
-                        <a class="nav-link" href="#about">About</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#projects">Projects</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#skills">Skills</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#contact">Contact</a>
-                    </li>
-                </ul>
-            </div>
-        </div>
-    </nav>
+<body class="bg-gray-100 text-gray-900">
 
-    <header class="bg-primary text-white text-center py-5">
-        <div class="container">
-            <h1>Welcome to My Portfolio</h1>
-            <p class="lead">I am a Software Engineer</p>
-        </div>
+    <header class="fixed w-full bg-gray-900 text-white shadow-lg z-50">
+        <nav class="container mx-auto p-4 flex justify-between items-center">
+            <a href="#home" class="text-2xl font-bold">PORTFOLIO</a>
+            <ul class="flex space-x-6">
+                <li><a href="#home" class="nav-link">Home</a></li>
+                <li><a href="#about" class="nav-link">About</a></li>
+                <li><a href="#resume" class="nav-link">Resume</a></li>
+                <li><a href="#projects" class="nav-link">Projects</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
+            </ul>
+        </nav>
     </header>
 
-    <section id="about" class="py-5">
-        <div class="container">
-            <h2>About Me</h2>
-            <p>I am web developer </p>
-        </div>
-    </section>
-
-    <section id="projects" class="py-5 bg-light">
-        <div class="container">
-            <h2>Projects</h2>
-            <div class="row">
-                <!-- Add your project details here -->
+    <main>
+        <section id="home" class="h-screen flex items-center justify-center bg-cover bg-center bg-home transition-all duration-700">
+            <body background="C:\Users\POORANI\Desktop\porfolio\images\bg1.jpg" ></body>
+            <div class="text-center bg-opacity-70 p-8 rounded-lg shadow-lg animate__animated animate__fadeIn">
+                <h1 class="text-5xl font-bold text-blue-200 mb-4">Hi,I am Annapoorani</h1>
+                <p class="text-lg text-white">Welcome to my portfolio</p>
             </div>
-        </div>
-    </section>
+        </section>
+        <section id="about" class="h-screen flex items-center justify-center bg-cover bg-center bg-resume transition-all duration-700">
+            <div class="text-center bg-opacity-70 p-8 rounded-lg shadow-lg animate__animated animate__fadeIn max-w-md mx-auto">
+                <h1 class="text-5xl font-bold text-blue-200 mb-4">About me</h1>
+                <p class="text-lg text-white">
+                    I am a passionate web developer and UI/UX designer with a strong foundation in front-end and back-end technologies. I am proficient in HTML, CSS, JavaScript, and Laravel, and have completed various internships and projects. With a degree in Computer Science and Engineering, I am skilled in creating interactive and user-friendly websites and applications, and I am a collaborative team player with excellent communication skills.
+                </p>
+            </div>
+        </section>
 
-    <section id="skills" class="py-5">
-        <div class="container">
-            <h2>Skills</h2>
-            <p>HTML, CSS, JavaScript, Python, Laravel, UI/UX Design</p>
-        </div>
-    </section>
+        <section id="resume" class="h-screen flex items-center justify-center bg-cover bg-center bg-resume transition-all duration-700">
+            <div class="text-center bg-opacity-70 p-8 rounded-lg shadow-lg animate__animated animate__fadeIn">
+                <h1 class="text-5xl font-bold text-blue-200 mb-4">Resume</h1>
+                <p class="text-lg text-white mb-4">Check out my professional experience and education.</p>
+                <a href="https://drive.google.com/file/d/1pW1HExndcK1_1-0WMALR-qtMWKfhKF_x/view?usp=drivesdk" target="_blank" class="bg-green-500 hover:bg-green-700 text-white font-bold py-2 px-4 rounded">View Resume</a>
+            </div>
+        </section>
 
-    <section id="contact" class="py-5 bg-light">
-        <div class="container">
-            <h2>Contact Me</h2>
-            <form>
-                <div class="mb-3">
-                    <label for="name" class="form-label">Name</label>
-                    <input type="text" class="form-control" id="name" required>
-                </div>
-                <div class="mb-3">
-                    <label for="email" class="form-label">Email address</label>
-                    <input type="email" class="form-control" id="email" required>
-                </div>
-                <div class="mb-3">
-                    <label for="message" class="form-label">Message</label>
-                    <textarea class="form-control" id="message" rows="3" required></textarea>
-                </div>
-                <button type="submit" class="btn btn-primary">Submit</button>
-            </form>
-        </div>
-    </section>
+        <section id="projects" class="h-screen flex items-center justify-center bg-cover bg-center bg-projects transition-all duration-700">
+            <div class="text-center bg-opacity-70 p-8 rounded-lg shadow-lg animate__animated animate__fadeIn">
+                <h1 class="text-5xl font-bold text-blue-200 mb-4">Projects</h1>
+                <p class="text-lg text-white mb-4" style="opacity: calc();">Explore some of the projects I've worked on:</p>
+                <ul class="list-disc list-inside text-left">
+                    <li class="text-lg text-white mb-2"><strong>Deepfake Detection:</strong> Using deep learning algorithms (MTCNN and PyTorch) to detect fake images.</li>
+                    <li class="text-lg text-white mb-2"><strong>Virtual Assistant:</strong> A Python-based assistant for healthcare and weather prediction.</li>
+                    <li class="text-lg text-white mb-2"><strong>Product Sales Analysis:</strong> Using IBM Cognos visualization tool for creating dashboards and analyzing sales data.</li>
+                </ul>
+            </div>
+        </section>
 
-    <footer class="bg-dark text-white text-center py-3">
-        <div class="container">
-            <p>&copy; 2024 My Portfolio</p>
-        </div>
+        <section id="contact" class="h-screen flex items-center justify-center bg-cover bg-center bg-contact transition-all duration-700">
+            <div class="text-center bg-opacity-70 p-8 rounded-lg shadow-lg animate__animated animate__fadeIn">
+                <h1 class="text-5xl font-bold text-blue-200 mb-4">Contact</h1>
+                <p class="text-lg text-white mb-4">Phone number : 9360711721</p>
+                <div class="space-x-4">
+
+                    <a href="https://www.linkedin.com/in/annapoorani-m834" target="_blank" class="bg-green-500 hover:bg-green-700 text-white font-bold py-2 px-4 rounded">LinkedIn</a>
+                </div>
+            </div>
+        </section>
+        
+    </main>
+
+    <footer class="text-center p-4 bg-gray-900 text-white">
+        <p>&copy; annapooranim41@gmail.com</p>
     </footer>
 
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@animate.css/animate.css"></script>
     <script src="scripts.js"></script>
 </body>
 </html>
