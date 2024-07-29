@@ -1,44 +1,66 @@
 body {
+    background-image: url('C:/Users/POORANI/Desktop/porfolio/images/bg1.jpg'); /* Update this with your background image path */
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    scroll-behavior: smooth;
+    font-weight: 300;
+    margin: 0;
+    padding: 0;
     font-family: 'Arial', sans-serif;
-    line-height: 1.6;
-    body {
-        background-image: url('C:/Users/POORANI/Pictures/bg2.jpg');
-        background-size: cover; /* Adjusts the background image to cover the whole page */
-        background-repeat: no-repeat; /* Prevents the image from repeating */
-        background-position: center; /* Centers the background image */
-    }
-    
 }
 
-header {
-    background: #007bff;
-    color: white;
-    padding-top: 100px;
-    padding-bottom: 100px;
+.font-bold {
+    font-weight: 300;
 }
 
-section {
-    padding: 60px 0;
+.bg-home, .bg-about, .bg-resume, .bg-projects, .bg-portfolio {
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.bg-home {
+    background-image: url('C:/Users/POORANI/Desktop/porfolio/images/bg1.jpg');
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
 }
 
-footer {
-    background: #343a40;
-    color: white;
-    padding: 20px 0;
+.bg-about {
+    background-image: url('C:/Users/POORANI/Desktop/porfolio/images/bg1.jpg');
 }
 
-.navbar-brand {
-    font-weight: bold;
+.bg-resume {
+    background-image: url('C:/Users/POORANI/Desktop/porfolio/images/bg1.jpg');
+}
+
+.bg-projects {
+    background-image: url('C:/Users/POORANI/Desktop/porfolio/images/bg1.jpg');
+}
+
+.bg-portfolio {
+    background-image: url('C:/Users/POORANI/Desktop/porfolio/images/bg1.jpg');
 }
 
 .nav-link {
-    margin-right: 15px;
+    transition: color 0.3s ease;
 }
 
 .nav-link:hover {
-    color: #007bff !important;
+    color: #fbbf24;
 }
 
-h2 {
-    margin-bottom: 30px;
+.animate__animated {
+    visibility: hidden;
+}
+
+section.active .animate__animated {
+    visibility: visible;
+    animation: fadeIn 1s ease-in;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
 }
